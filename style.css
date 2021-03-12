@@ -1,0 +1,534 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Commissioner', sans-serif;
+  background-color: rgb(240, 240, 240);
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+}
+
+/* Header style start */
+header.header {
+  height: 43vh;
+  background-image: url('./images/image-hero-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Header style end */
+
+/* Navbar style start */
+nav.navbar {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+ul.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 300px;
+}
+
+ul.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+/* Navbar style end */
+
+/* Mastercraft style start */
+.mastercraft {
+  background-color: #fff;
+  max-width: 700px;
+  padding: 0px 10px 50px 10px;
+  height: auto;
+  margin: auto;
+  border-radius: 8px;
+  transform: translate(0, -100px);
+}
+
+.mastercraft-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.mastercraft-top img {
+  transform: translate(0, -30px);
+}
+
+.mastercraft-top p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(88, 83, 83);
+}
+
+.mastercraft-bottom {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mastercraft-bottom .btn-back {
+  width: 250px;
+  height: 63px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 40px;
+  outline: none;
+  background-color: hsl(176, 50%, 47%);
+}
+
+.mastercraft-bottom .btn-back:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+
+.mastercraft-bottom .btn-book {
+  position: relative;
+  cursor: pointer;
+  width: 250px;
+  height: 63px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  color: hsl(176, 72%, 28%);
+}
+
+.mastercraft-bottom .btn-book img {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  color: hsl(176, 72%, 28%);
+}
+/* Mastercraft style end */
+
+/* Counter style start */
+.counter {
+  background-color: #fff;
+  max-width: 700px;
+  padding: 30px 30px;
+  height: auto;
+  margin: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transform: translate(0, -80px);
+}
+
+.count {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.number {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+}
+
+.vertical-border {
+  width: 2px;
+  height: 50px;
+  background-color: #ddd;
+}
+
+.pro-bar {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.prograss {
+  position: absolute;
+  border-radius: 10px;
+  display: inline-block;
+  width: 80%;
+  height: 9px;
+  background-color: hsl(176, 50%, 47%);
+}
+/* Counter style end */
+
+/* About style start */
+.about {
+  background-color: #fff;
+  max-width: 700px;
+  padding: 30px 30px;
+  height: auto;
+  margin: auto;
+  border-radius: 8px;
+  transform: translate(0, -60px);
+}
+
+.inner-container {
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  border-radius: 8px;
+}
+
+.card .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card .card-top .pledge {
+  color: hsl(176, 50%, 47%);
+}
+
+.card .card-middle {
+  margin-bottom: 20px;
+}
+
+.card .card-middle p {
+  line-height: 1.7;
+  color: rgb(121, 118, 118);
+}
+
+.card .card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .card-bottom h3 {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.card .card-bottom .card-span {
+  color: rgb(121, 118, 118);
+  font-size: 15px;
+}
+
+.card .card-bottom button {
+  padding: 20px 30px;
+  font-weight: bold;
+  background-color: hsl(176, 50%, 47%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card .card-bottom button:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+
+.disabled-card {
+  opacity: 0.3;
+}
+
+.card .card-bottom button.disabled-button {
+  background-color: rgb(104, 101, 101);
+}
+/* About style end */
+
+/* Popup Modal box style start */
+.thank-you-box {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  bottom: -100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.thank-you-content {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 40%;
+  margin: auto;
+  transform: translate(0, 570px);
+}
+
+.thank-you-content button {
+  padding: 10px 30px;
+  margin-top: 30px;
+  background-color: hsl(176, 50%, 47%);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.thank-you-content button:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+/* Popup Modal box style end */
+
+/* Project modal box style start */
+.project-modal-box {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  bottom: -100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.project-box {
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+  transform: translate(0, 200px);
+}
+
+.project-box p {
+  margin-top: 20px;
+}
+
+.project-box .project-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-box .project-top .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.project-box .project-top .close:hover,
+.project-box .project-top .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Project card 1 */
+.project-card {
+  margin-top: 30px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+.project-card .card-top {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 15px 0;
+}
+
+.project-card .content h4 {
+  font-weight: bold;
+}
+
+.project-card .content p {
+  line-height: 1.6;
+  color: rgb(129, 122, 122);
+}
+.project-card .card-top .customcb {
+  width: 30px;
+  height: 23px;
+  margin: 2px 0 2px 0;
+  background: #fff;
+  border: 1.7px solid #ddd;
+  border-radius: 100%;
+  position: relative;
+}
+
+.project-card .card-top .customcb label.inner {
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3.5px;
+  z-index: 1;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.project-card .card-top .customcb1 [type='checkbox'] {
+  display: none;
+}
+
+.project-card
+  .card-top
+  .customcb1
+  input[type='checkbox']:checked
+  + label.inner {
+  background-color: rgb(13, 212, 13);
+}
+
+.card-top .content {
+  margin-left: 10px;
+}
+
+.card-price {
+  border-top: 2px solid #ddd;
+  padding: 20px 0;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-price .left {
+  margin-left: 20px;
+  width: 20%;
+}
+
+.card-price .left input {
+  width: 100%;
+  font-size: 17px;
+  border: none;
+  outline: none;
+}
+
+.card-price .right {
+  display: flex;
+  width: 300px;
+  /* border: 1px solid green; */
+}
+
+.card-price .right .number {
+  position: relative;
+  border: 1px solid #ddd;
+  width: 70px;
+  padding: 25px 50px 25px 50px;
+  border-radius: 40px;
+}
+
+.card-price .right .number .dollar {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-size: 18px;
+  color: rgb(168, 161, 161);
+}
+
+.card-price .right .number input {
+  width: 50%;
+  position: absolute;
+  right: 10px;
+  top: 14.5px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.card-price .right button {
+  background-color: hsl(176, 50%, 47%);
+  margin-left: 20px;
+  color: #fff;
+  border: none;
+  padding: 0 30px;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card-price .right button:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+
+/* Project card 2 */
+.project-card .content .content-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card .content .content-inner .active {
+  color: hsl(176, 50%, 47%);
+  margin-right: 400px;
+}
+
+.project-card .content .content-inner h4.price {
+  font-weight: bold;
+}
+
+.project-card .content .content-inner h4.price span.span {
+  font-size: 13px;
+  color: rgb(124, 124, 124);
+}
+
+.project-card .card-top .customcb2 [type='checkbox'] {
+  display: none;
+}
+
+.project-card
+  .card-top
+  .customcb2
+  input[type='checkbox']:checked
+  + label.inner {
+  background-color: rgb(13, 212, 13);
+}
+
+/* Project card 3 */
+.project-card .card-top .customcb3 [type='checkbox'] {
+  display: none;
+}
+
+.project-card
+  .card-top
+  .customcb3
+  input[type='checkbox']:checked
+  + label.inner {
+  background-color: rgb(13, 212, 13);
+}
+
+/* Project card 4 */
+.project-card .card-top .customcb4 [type='checkbox'] {
+  display: none;
+}
+
+.project-card
+  .card-top
+  .customcb4
+  input[type='checkbox']:checked
+  + label.inner {
+  background-color: rgb(13, 212, 13);
+}
+/* Project modal box style end */
