@@ -1,6 +1,9 @@
 const bookmarked = document.getElementById("bookmarked");
+const bookmarkedMobile = document.getElementById("bookmarkedMobile");
 const thankBox = document.getElementById("thankbox");
 const gotIt = document.getElementById("gotit");
+
+
 
 // Checkbox script
 var customcb1 = document.getElementById("customcb1");
@@ -68,6 +71,10 @@ bookmarked.onclick = function() {
     thankBox.style.display = "block";
 }
 
+bookmarkedMobile.onclick= function() {
+    thankBox.style.display = "block";
+}
+
 gotIt.onclick = function() {
     thankBox.style.display = "none";
 }
@@ -94,3 +101,17 @@ backThisPorject.onclick = function() {
 close.onclick = function() {
     projectModalBox.style.display = "none";
 }
+
+// Manu bar trigger
+
+const navBurger = function() {
+    const burger = document.getElementById("burgerMenu");
+    const navLinks = document.getElementById("navLinks");
+
+    burger.addEventListener("click", () => {
+        navLinks.classList.toggle("nav-links-active")
+        navLinks.classList.remove("nav-links");
+    })
+}
+
+navBurger();

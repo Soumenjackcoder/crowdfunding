@@ -17,11 +17,17 @@
         <img src="./images/logo.svg" alt="logo">
       </div>
 
-      <ul class="nav-links">
+      <ul class="nav-links nav-links-desktop-default nav-links-default" id="navLinks">
         <li><a href="#">About</a></li>
         <li><a href="#">Discover</a></li>
         <li><a href="#">Get Started</a></li>
       </ul>
+
+      <div class="burger" id="burgerMenu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line2"></div>
+      </div>
     </nav>
   </header>
   <!-- Header end -->
@@ -54,7 +60,7 @@
             <input type="checkbox" value="1" id="customcb1" onclick="myFunction1()" />
             <label for="customcb1" class="inner"></label>
             <label for="customcb1" class="outer"></label>
-        </div>
+          </div>
           <div class="content">
             <h4>Pledge with no reward</h4>
             <p>
@@ -83,7 +89,7 @@
             <input type="checkbox" value="1" id="customcb2" onclick="myFunction2()" />
             <label for="customcb2" class="inner"></label>
             <label for="customcb2" class="outer"></label>
-        </div>
+          </div>
           <div class="content">
             <div class="content-inner">
               <h4>Bamboo Stand</h4>
@@ -93,6 +99,8 @@
             <p>
               You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional, and you'll be added to a special Backer member list.
             </p>
+
+            <h1 class="mobile-price">101 <span class="mobile-price-span">left</span></h1>
           </div>
         </div>
 
@@ -126,6 +134,7 @@
             <p>
               You get a Black Special Edition computer stand and a personal thank you. You'll be added to our Backer member list. Shipping is included.
             </p>
+            <h1 class="mobile-price">64 <span class="mobile-price-span">left</span></h1>
           </div>
         </div>
 
@@ -142,7 +151,7 @@
         </div>
       </div>
       <!-- Project card 4 -->
-      <div class="project-card" id="projectCard4">
+      <div class="project-card disabled-card" id="projectCard4">
         <div class="card-top">
           <div class="customcb customcb4">
             <input type="checkbox" value="1" id="customcb4" onclick="myFunction4()" />
@@ -158,6 +167,7 @@
             <p>
               You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You'll be added to our Backer member list. Shipping is included.
             </p>
+            <h1 class="mobile-price">0 <span class="mobile-price-span">left</span></h1>
           </div>
         </div>
 
@@ -191,7 +201,8 @@
       </div>
       <div class="mastercraft-bottom">
         <button class="btn-back" id="backThisPorject">Back this project</button>
-        <button class="btn-book" id="bookmarked"><img src="./images/icon-bookmark.svg" alt="icon-bookmark"> Bookmarked</button>
+        <button class="btn-book desktop" id="bookmarked"><img src="./images/icon-bookmark.svg" alt="icon-bookmark"> Bookmarked</button>
+        <button class="mobile" id="bookmarkedMobile"><img src="./images/icon-bookmark -mobile.svg" alt="icon-bookmark"></button>
       </div>
     </div>
     <!-- Mastercraft end -->

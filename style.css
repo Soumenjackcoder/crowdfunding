@@ -10,6 +10,14 @@ body {
   background-color: rgb(240, 240, 240);
 }
 
+.mastercraft-bottom .mobile {
+  display: none;
+}
+
+.project-card .content h1.mobile-price {
+  display: none;
+}
+
 .container {
   width: 50%;
   margin: auto;
@@ -22,6 +30,7 @@ header.header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /* Header style end */
 
 /* Navbar style start */
@@ -38,9 +47,25 @@ ul.nav-links {
   width: 300px;
 }
 
+.nav-links-desktop-default {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.nav-links-desktop-default li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 ul.nav-links li a {
   color: #fff;
   text-decoration: none;
+}
+
+.burger {
+  display: none;
 }
 /* Navbar style end */
 
@@ -155,6 +180,7 @@ ul.nav-links li a {
   height: 10px;
   background-color: #ddd;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 .prograss {
@@ -198,6 +224,10 @@ ul.nav-links li a {
   margin-bottom: 20px;
 }
 
+.card .card-top > h3 {
+  margin-bottom: 1px;
+}
+
 .card .card-top .pledge {
   color: hsl(176, 50%, 47%);
 }
@@ -220,6 +250,7 @@ ul.nav-links li a {
 .card .card-bottom h3 {
   font-size: 2vw;
   font-weight: bold;
+  margin-bottom: 2px;
 }
 
 .card .card-bottom .card-span {
@@ -302,7 +333,7 @@ ul.nav-links li a {
   z-index: 1;
   width: 100%;
   top: 0;
-  bottom: -100%;
+  bottom: -1000px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -362,6 +393,7 @@ ul.nav-links li a {
 }
 .project-card .card-top .customcb {
   width: 30px;
+  min-width: 23px;
   height: 23px;
   margin: 2px 0 2px 0;
   background: #fff;
@@ -373,7 +405,11 @@ ul.nav-links li a {
 .project-card .card-top .customcb label.inner {
   display: block;
   width: 13px;
+  min-width: 13px;
+  max-width: 13px;
   height: 13px;
+  min-height: 13px;
+  max-height: 13px;
   border-radius: 100%;
   background-color: #fff;
   cursor: pointer;
@@ -482,7 +518,6 @@ ul.nav-links li a {
 
 .project-card .content .content-inner .active {
   color: hsl(176, 50%, 47%);
-  margin-right: 400px;
 }
 
 .project-card .content .content-inner h4.price {
@@ -532,3 +567,189 @@ ul.nav-links li a {
   background-color: rgb(13, 212, 13);
 }
 /* Project modal box style end */
+
+/* For mobile responsiveness */
+
+@media screen and (max-width: 768px) {
+  ul.nav-links {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    margin: auto;
+    top: 120px;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 20px 20px 50px 15px grey;
+    z-index: 1;
+    transition: all 0.2s ease;
+  }
+
+  .nav-links-default {
+    list-style: none;
+    display: none;
+  }
+  .nav-links-default li a {
+    text-decoration: none;
+  }
+
+  ul.nav-links-active li {
+    padding: 30px 25px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  ul.nav-links-active li:last-child {
+    border-bottom: none;
+  }
+  ul.nav-links-active li a {
+    color: black;
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+
+  .nav-links-active {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    margin: auto;
+    top: 120px;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 20px 20px 50px 15px grey;
+    z-index: 1;
+    transition: all 0.2s ease;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .burger > div {
+    width: 25px;
+    height: 3px;
+    margin: 4px;
+    background-color: #fff;
+  }
+
+  /* Mastercraft style start */
+  .mastercraft {
+    text-align: center;
+  }
+  .mastercraft-bottom .btn-book {
+    display: none;
+  }
+
+  .mastercraft-bottom .mobile {
+    display: block;
+    outline: none;
+    border: none;
+    background-color: #fff;
+  }
+
+  /* Counter style start */
+  .count {
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+
+  .number {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .vertical-border {
+    width: 100px;
+    height: 2px;
+    margin: 20px auto;
+  }
+
+  /* About style start */
+
+  .card .card-top {
+    flex-direction: column;
+  }
+
+  .card .card-top > h3 {
+    margin-bottom: 10px;
+  }
+
+  .card .card-bottom {
+    flex-direction: column;
+  }
+
+  .card .card-bottom h3 {
+    font-size: 5vw;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+
+  /* Project card 2 */
+  .project-card .content .content-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card .content h1.mobile-price {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .project-card .content h1.mobile-price span.mobile-price-span {
+    font-size: 15px;
+    color: rgb(129, 128, 128);
+  }
+
+  .project-card .content .content-inner h4.price {
+    display: none;
+  }
+
+  .project-modal-box {
+    bottom: -2000px;
+  }
+
+  .project-box {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 707px) {
+
+  .container {
+    width: 80%;
+  }
+
+  header.header {
+    background-image: url('./images/image-hero-mobile.jpg');
+  }
+  .nav-links-active {
+    width: 80%;
+  }
+  ul.nav-links-active li {
+    padding: 20px 25px;
+  }
+
+  .project-box {
+    width: 90%;
+    padding: 20px;
+  }
+  .card-price {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .card-price .left {
+    margin-left: 1px;
+    width: 50%;
+  }
+
+  .card-price .right {
+    width: 300px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .thank-you-content {
+    width: 90%;
+    transform: translate(0, 150px);
+  }
+}
